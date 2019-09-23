@@ -8,6 +8,8 @@ if (grade < 6){
     console.log("Goed");
 } else if (grade > 9) {
     console.log("Uitmuntend");
+} else {
+    console.log(grade);
 }
 
 // opdracht 2
@@ -58,12 +60,18 @@ switch(grade) {
 }
 
 //opdracht 3
-let purchasedBook = true;
+const purchasedBook = true;
 let job = "teacher";
 let inTrain = true;
 
 if (purchasedBook == true && inTrain == true && job == "teacher") {
-    console.log("Finally i can enjoy my book!");
+    console.log("Finally I can enjoy my book!");
+} else if (purchasedBook == false){
+    console.log("I need to buy a book.");
+} else if (inTrain == false) {
+    console.log("I have to get on a train.");
+} else if (job != "teacher") {
+    console.log("I'm not a teacher");
 } else {
-    console.log("Oh well...");
+    console.error("Something went wrong");
 }
