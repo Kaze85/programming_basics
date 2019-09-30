@@ -46,3 +46,20 @@ function factorial(num) {
 factorial(5);
 
 //Oefening 4
+function writeASound(animalSound) {
+    console.log(animalSound);
+ }
+ 
+ function processUserInput(callback) {
+    var animal = prompt('Please enter an animal.');
+    if (animal == "dog") {
+        animalSound = "Dog sound";
+    } else if (animal == "cat") {
+        animalSound = "Cat sound";
+    } else {
+        animalSound = "Animal not found.";
+    }
+    callback(animalSound);
+ }
+ processUserInput(writeASound);
+ 
