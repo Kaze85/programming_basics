@@ -1,4 +1,4 @@
-/// 1
+/// assignment 1
 const lapRounds = [
     {
         round: 1,
@@ -36,7 +36,7 @@ const lapRounds = [
 
 console.log(lapRounds);
 
-/// 2
+/// assignment 2
 const teachers = [
     {
         name: "Loek",
@@ -59,7 +59,7 @@ teachers.forEach(function(value) {
     console.log(`I have a ${value.profession} named ${value.name} and he likes to work on a ${value.brand} computer`);
 });
 
-/// 3
+/// assignment 3
 // Add the salary and the hours per week
 function addSalaryAndHours(salary, hours, index) {
     teachers[index].salary = salary;
@@ -74,14 +74,12 @@ for (let i = 0; i < teachers.length; i++) {
 
 console.log(teachers);
 
-// Show the salary per hours
-function salaryPerHour(salary, hoursPerWeek) {
-    return teachers.salaryPerHour = Number((salary/hoursPerWeek).toFixed(2));
-}
-
-teachers.forEach(function(value) {
-    value.salaryPerHour = salaryPerHour(value.salary, value.hoursPerWeek);
-})
-
+// Add and show the salary per hours
+teachers.forEach(function(value, index) {
+    teachers[index].salaryPerHour = function (salary, hoursPerWeek) {
+        return Number((salary/hoursPerWeek));
+    }
+    return console.log(`Salary/hour ${teachers[index].name}: $${teachers[index].salaryPerHour(value.salary, value.hoursPerWeek).toFixed(2)}`);
+});
 
 console.log(teachers);
