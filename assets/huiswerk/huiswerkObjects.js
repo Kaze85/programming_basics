@@ -1,4 +1,5 @@
 /// assignment 1
+//The names of the properties are "round" and "time"
 const lapRounds = [
     {
         round: 1,
