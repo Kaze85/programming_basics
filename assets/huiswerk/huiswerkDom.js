@@ -6,7 +6,7 @@ function addAverage() {
     for (let i = 1; i < tableItems.length; i+=2) {
         let grade = Number(tableItems[i].innerText);
         total += grade;
-        console.log(x);
+        console.log(total);
     }
 
     console.log(total/4);
@@ -24,7 +24,7 @@ function addAverage() {
     table.append(tr);
 }
 
-// addAverage();
+addAverage();
 
 //assignement 2
 const course = document.getElementsByTagName("li");
