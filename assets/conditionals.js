@@ -2,7 +2,7 @@ let currentAction = "";
 
 /// if calculating
 // optellen - aftrekken - delen - vermenigvuldigen
-if (currentAction == "calculating"){
+if (currentAction == "calculating") {
     let y = 10;
     let x = 5;
     console.log("optellen: ", x + y);
@@ -10,8 +10,8 @@ if (currentAction == "calculating"){
     console.log("delen: ", x / y);
     console.log("vermenigvuldigen: ", x * y);
 
-/// if strings
-// uppercase - length - match - substring - charat
+    /// if strings
+    // uppercase - length - match - substring - charat
 } else if (currentAction == "strings") {
     let word = "test";
     console.log(word.toUpperCase());
@@ -19,18 +19,18 @@ if (currentAction == "calculating"){
     console.log(word.match("t"));
     console.log(word.substring(1, 3));
     console.log(word.charAt(3));
-    
-/// if boolean
-// check of cijfer hoog genoeg is
+
+    /// if boolean
+    // check of cijfer hoog genoeg is
 } else if (currentAction == "boolean") {
     const x = 7;
-    if (x >= 6){
+    if (x >= 6) {
         console.log("cijfer is hoog genoeg");
     } else {
         console.log("cijfer is te laag");
     }
-/// default
-// currentAction kan niet worden uitgevoerd
+    /// default
+    // currentAction kan niet worden uitgevoerd
 } else {
     console.log("currentAction kan niet worden uitgevoerd");
 }
@@ -42,7 +42,7 @@ var bmi = (weight / (height * height));
 bmi.toFixed(2);
 
 console.log("bmi: ", bmi)
-if (bmi < 18.5){
+if (bmi < 18.5) {
     console.log("ondergewicht");
 } else if (bmi >= 18.5 && bmi < 25) {
     console.log("Normaal gewicht");
