@@ -1,0 +1,44 @@
+.button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(76, 78, 175);
+    border: none;
+    color: white;
+    padding: 60px 128px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.smaller-button {
+    background-color: rgb(76, 139, 175);
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.smallest-button {
+    background-color: rgb(97, 212, 197);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
