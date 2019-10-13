@@ -1,3 +1,5 @@
+// assignement 2
+
 window.addEventListener("load", init);
 
 function init() {
@@ -7,6 +9,7 @@ function init() {
 }
 let priceArray = [];
 
+// add products to a table
 function addProduct(event) {
     event.preventDefault();
     const product = document.getElementById("product").value;
@@ -14,7 +17,6 @@ function addProduct(event) {
     const total = document.getElementById("total");
 
     priceArray.push(Number(price));
-    
 
     console.log(product+price);
 
@@ -43,6 +45,7 @@ function addProduct(event) {
     remButton.addEventListener("click", removeProduct);
 }
 
+// attempted removing of table row
 function removeProduct(event) {
     event.preventDefault();
     console.log(event);
@@ -50,6 +53,7 @@ function removeProduct(event) {
     console.log(tr);
 }
 
+// add a total of the prices
 function addTotal(price, priceArray) {
     console.log(priceArray);
     console.log(price);
